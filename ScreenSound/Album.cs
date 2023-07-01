@@ -10,6 +10,11 @@
     }
     public List<Musica> Musicas { get; set; } = new List<Musica>();
 
+    public Album(string nome)
+    {
+        Nome = nome;
+    }
+
     public void AdicionarMusica(Musica musica)
     {
         Musicas.Add(musica);

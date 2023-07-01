@@ -1,18 +1,10 @@
-﻿Musica musica1 = new Musica();
-musica1.Nome = "THE DEATH OF PEACE OF MIND";
-musica1.Artista = "Bad Omens";
-musica1.Duracao = 241;
-musica1.Disponivel = true;
+﻿Banda badOmens = new Banda("Bad Omens");
 
-Musica musica2 = new Musica();
-musica2.Nome = "Just Pretend";
-musica2.Artista = "Bad Omens";
-musica2.Duracao = 204;
-musica2.Disponivel = false;
+Album album = new Album("THE DEATH OF PEACE OF MIND");
 
-Album album = new Album();
+Musica musica1 = new Musica("THE DEATH OF PEACE OF MIND", badOmens, 241, new GeneroMusical(), true);
+Musica musica2 = new Musica("Just Pretend", badOmens, 204, new GeneroMusical(), false);
 
-album.Nome = "THE DEATH OF PEACE OF MIND";
 album.AdicionarMusica(musica1);
 album.AdicionarMusica(musica2);
 
