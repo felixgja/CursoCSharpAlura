@@ -3,6 +3,7 @@ musica1.Nome = "THE DEATH OF PEACE OF MIND";
 musica1.Artista = "Bad Omens";
 musica1.Duracao = 241;
 musica1.Disponivel = true;
+Console.WriteLine(musica1.DescricaoResumida);
 
 Musica musica2 = new Musica();
 musica2.Nome = "Just Pretend";
