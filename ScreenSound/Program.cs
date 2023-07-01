@@ -28,7 +28,7 @@ void ExibirOpcoesDoMenu()
     Console.WriteLine("Digite 2 para mostrar todas as bandas");
     Console.WriteLine("Digite 3 para avaliar uma banda");
     Console.WriteLine("Digite 4 para exibir a média de uma banda");
-    Console.WriteLine("Digite -1 para sair");
+    Console.WriteLine("Digite 0 para sair");
 
     Console.Write("\nDigite a sua opção: ");
     string opcaoEscolhida = Console.ReadLine()!;
@@ -48,7 +48,7 @@ void ExibirOpcoesDoMenu()
         case 4:
             MenuExibirMedia();
             break;
-        case -1:
+        case 0:
             Console.WriteLine("Tchau tchau :)");
             break;
         default:
