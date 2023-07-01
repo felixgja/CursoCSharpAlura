@@ -1,14 +1,14 @@
 ﻿Musica musica1 = new Musica();
-musica1.nome = "THE DEATH OF PEACE OF MIND";
-musica1.artista = "Bad Omens";
-musica1.duracao = 241;
-musica1.disponivel = true;
+musica1.Nome = "THE DEATH OF PEACE OF MIND";
+musica1.Artista = "Bad Omens";
+musica1.Duracao = 241;
+musica1.Disponivel = true;
 
 Musica musica2 = new Musica();
-musica2.nome = "Just Pretend";
-musica2.artista = "Bad Omens";
-musica2.duracao = 204;
-musica2.disponivel = false;
+musica2.Nome = "Just Pretend";
+musica2.Artista = "Bad Omens";
+musica2.Duracao = 204;
+musica2.Disponivel = false;
 
 musica1.ExibirFichaTecnica();
 musica2.ExibirFichaTecnica();
