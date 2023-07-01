@@ -1,4 +1,26 @@
-﻿Banda badOmens = new Banda("Bad Omens");
+﻿Episodio ep = new Episodio("Testando classe", 24);
+ep.AdicionarConvidados("Maria");
+ep.AdicionarConvidados("Pedro");
+ep.AdicionarConvidados("João");
+
+Episodio ep2 = new Episodio("Testando classe2", 31);
+ep2.AdicionarConvidados("Maria");
+ep2.AdicionarConvidados("João");
+
+Episodio ep3 = new Episodio("Testando classe3", 45);
+ep3.AdicionarConvidados("Pedro");
+
+Podcast pc = new("Felipe Silva", "TI na Prática");
+pc.AdicionarEpisodio(ep);
+pc.ExibirDetalhes();
+Console.WriteLine();
+
+pc.AdicionarEpisodio(ep2);
+pc.AdicionarEpisodio(ep3);
+pc.ExibirDetalhes();
+
+/* 
+Banda badOmens = new Banda("Bad Omens");
 
 Album album = new Album("THE DEATH OF PEACE OF MIND");
 
@@ -10,7 +32,7 @@ album.AdicionarMusica(musica2);
 
 album.ExibirMusicas();
 Console.WriteLine($"Duração do álbum: {album.DuracaoTotal}s");
-
+*/
 
 //// Screen Sound
 //string mensagemDeBoasVindas = "Boas vindas ao Screen Sound";

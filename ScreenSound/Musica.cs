@@ -8,6 +8,7 @@
     public string DescricaoResumida =>
         $"A música {Nome} pertence a banda à banda {Artista}.";
 
+    //Implementação Descrição com get
     //public string DescricaoResumida
     //{
     //    get
