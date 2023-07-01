@@ -3,7 +3,6 @@ musica1.Nome = "THE DEATH OF PEACE OF MIND";
 musica1.Artista = "Bad Omens";
 musica1.Duracao = 241;
 musica1.Disponivel = true;
-Console.WriteLine(musica1.DescricaoResumida);
 
 Musica musica2 = new Musica();
 musica2.Nome = "Just Pretend";
@@ -11,8 +10,16 @@ musica2.Artista = "Bad Omens";
 musica2.Duracao = 204;
 musica2.Disponivel = false;
 
-musica1.ExibirFichaTecnica();
-musica2.ExibirFichaTecnica();
+Album album = new Album();
+
+album.Nome = "THE DEATH OF PEACE OF MIND";
+album.AdicionarMusica(musica1);
+album.AdicionarMusica(musica2);
+
+album.ExibirMusicas();
+Console.WriteLine($"Duração do álbum: {album.DuracaoTotal}s");
+
+
 //// Screen Sound
 //string mensagemDeBoasVindas = "Boas vindas ao Screen Sound";
 ////List<string> listaDasBandas = new List<string> { "Bring Me The Horizon", "Bad Omens", "Spiritbox" };
